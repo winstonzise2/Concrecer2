@@ -34,6 +34,21 @@ nav {
     background-color: var(--hover-nav);
 }
 
+/* Empresa Valores estilos */
+
+#empresa-valores .card-simple {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: var(--verde-decor);
+    color: #e20303;
+    font-weight: bold;
+}
+
+#empresa-objetivos li {
+    color: #e00202;
+    font-weight: bold;
+}
+
+
 /* DROPDOWNS */
 .dropdown-content { 
     display: none; position: absolute; background: white; min-width: 220px; 
@@ -48,6 +63,11 @@ nav {
     padding: 12px 20px; color: #333; text-decoration: none; 
     display: block; transition: all 0.3s ease;
 }
+
+.accordion-item a {
+    color: rgb(221, 0, 0); font-weight: bold; text-decoration: none;
+}
+
 .dropdown-content li a:hover {
     background-color: var(--verde-logo); color: white; padding-left: 30px;
 }
@@ -95,6 +115,7 @@ h2 { font-size: 2.5rem; }
 #productos-arenas li { color: rgb(221, 0, 0); font-weight: bold; }
 #productos-recebos li { color: rgb(221, 0, 0); font-weight: bold; }
 #servicios li { color: rgb(221, 0, 0); font-weight: bold; }
+
 
 /* ACCORDION PRODUCTOS */
 .accordion { width: 100%; max-width: 800px; margin: 0 auto; text-align: left; }
@@ -281,5 +302,4 @@ button:hover {
     /* Ajuste para tarjetas móviles */
     .grid-3 { grid-template-columns: 1fr; gap: 15px; }
     .card-simple { padding: 20px; }
-
 }
