@@ -90,6 +90,12 @@ h2 { font-size: 2.5rem; }
 .lista-puntos li { display: flex; align-items: start; gap: 10px; padding: 8px 0; }
 .lista-puntos i { color: var(--verde-decor); margin-top: 5px; }
 
+/* Productos */
+
+#productos-arenas li { color: rgb(221, 0, 0); font-weight: bold; }
+#productos-recebos li { color: rgb(221, 0, 0); font-weight: bold; }
+#servicios li { color: rgb(221, 0, 0); font-weight: bold; }
+
 /* ACCORDION PRODUCTOS */
 .accordion { width: 100%; max-width: 800px; margin: 0 auto; text-align: left; }
 .accordion-item { background: white; border: 1px solid #ddd; margin-bottom: 10px; border-radius: 8px; overflow: hidden; cursor: pointer; }
@@ -275,4 +281,5 @@ button:hover {
     /* Ajuste para tarjetas móviles */
     .grid-3 { grid-template-columns: 1fr; gap: 15px; }
     .card-simple { padding: 20px; }
+
 }
