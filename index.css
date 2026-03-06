@@ -6,6 +6,12 @@
     --hover-nav: rgba(0,102,67,0.1);
 }
 
+a { text-decoration: none; }
+
+.catalogo-volver {
+    font-size: 0.8rem; color: var(--verde-decor); text-decoration: none; font-weight: bold;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Segoe UI', sans-serif; overflow: hidden; }
@@ -34,20 +40,71 @@ nav {
     background-color: var(--hover-nav);
 }
 
+/* nosotros */
+#nosotros .verde-logo {
+    font-size: 2.5rem; margin-bottom: 20px;
+}
 /* Empresa Valores estilos */
 
 #empresa-valores .card-simple {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0,0,0,0.1);
     border-color: var(--verde-decor);
     color: #01741d;
 
 }
+
+/* Empresa política */
+
+#empresa-politica .card-simple {
+    background: rgba(0,0,0,0.1)
+    
+}
+
+/* Empresa objetivos */
 
 #empresa-objetivos li {
     color: #01741d;
     
 }
 
+#empresa-objetivos i {
+    width: 5px; color: var(--verde-decor);
+}
+
+#empresa-objetivos h3 {
+    color: var(--verde-decor);
+}
+
+/* Productos */
+
+#productos-inicio .container { display: flex; flex-direction: column; align-items: center; padding-bottom: 100px;}
+#productos-inicio p {
+    color: #01741d; text-align: justify; line-height: 1.6; font-size: small;
+}
+
+#productos-inicio .mt-10 {
+        color: #0b5501;
+        font-size: small;
+}
+
+#productos-inicio a {font-size: 0.9rem;}
+
+#productos-inicio .accordion-item {
+    width: 100%; max-width: 800px; margin: 0 auto; text-align: left; background: white; border: 1px solid #ddd; margin-bottom: 10px; border-radius: 8px; overflow: hidden; cursor: pointer; padding: 0;
+}
+
+#productos-inicio .accordion-header{
+    padding: 5px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: var(--verde-logo); background: #f9f9f9; transition: background 0.3s;
+    text-decoration: none;
+}
+
+#productos-inicio .catalogo-volver {
+    font-size: 2rem; color: var(--verde-decor); text-decoration: none; font-weight: bold;
+}
+
+#productos-inicio .catalogo-volver a {
+    background-color: yellowgreen;
+}
 
 /* DROPDOWNS */
 .dropdown-content { 
@@ -64,13 +121,18 @@ nav {
     display: block; transition: all 0.3s ease;
 }
 
+.accordion-item { padding: 0;
+}
+
 .accordion-item a {
-    color: #01741d; font-weight: bold; text-decoration: none;
+    color: #01741d; text-decoration: none;
 }
 
 .dropdown-content li a:hover {
     background-color: var(--verde-logo); color: white; padding-left: 30px;
 }
+
+.text-white { font-size: 1.2rem;}
 
 /* SECCIONES */
 .pagina { min-height: 100vh; width: 100%; scroll-snap-align: start; display: flex; justify-content: center; align-items: center; padding: 120px 10% 40px 10%; text-align: center; }
@@ -79,12 +141,12 @@ nav {
 .pagina-clara { background: white; color: #333; }
 .container { width: 100%; max-width: 1200px; }
 
-h1 { font-size: 3.5rem; border-left: 10px solid var(--verde-decor); padding-left: 20px; text-align: left; }
-h2 { font-size: 2.5rem; }
+h1 { font-size: 3.1rem; border-left: 10px solid var(--verde-decor); padding-left: 20px; text-align: left; }
+h2 { font-size: 1.1rem; }
 .verde-decor { color: var(--verde-decor); }
-.verde-logo { color: var(--verde-decor); }
+.verde-logo { color: var(--verde-decor); font-size: 1.4rem;}
 .mt-10 { margin-top: 10px; }
-.mt-20 { margin-top: 20px; }
+.mt-20 { margin-top: 10px; }
 .mb-10 { margin-bottom: 10px; }
 .text-left { text-align: left; }
 .text-justify { text-align: justify; line-height: 1.6; }
@@ -94,11 +156,12 @@ h2 { font-size: 2.5rem; }
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 
-.card-simple { padding: 30px; border-radius: 15px; border: 1px solid #000000; background: rgba(0,0,0,0.1); }
+.card-simple { padding: 15px; border-radius: 15px; border: 1px solid #015a14; background: rgba(0,0,0,0.1); }
 .card-simple.dark { background: rgba(0, 0, 0, 0.32); border-color: rgb(255, 255, 255); color: white; }
 .card-simple ul { list-style: none; margin-top: 10px; }
 .card-simple li { padding: 5px 0; border-bottom: 1px solid #ffffff; }
-.card-simple h3 { color: var(--verde-decor); margin-bottom: 10px; }
+.card-simple h3 { color: var(--verde-decor); margin-bottom: 3px; }
+.card-simple p { color: #ffffff; text-align: justify; line-height: 1.6; font-size: small;}
 
 /* LISTAS DE CHECK */
 .lista-check { list-style: none; text-align: left; }
@@ -110,12 +173,29 @@ h2 { font-size: 2.5rem; }
 .lista-puntos li { display: flex; align-items: start; gap: 10px; padding: 8px 0; }
 .lista-puntos i { color: var(--verde-decor); margin-top: 5px; }
 
+/* Empresa Valores */
+
+#empresa-valores p { color: #042200; text-align: justify; line-height: 1.6; font-size: small; }
+#empresa-valores h2 { font-size: 1.2rem;}
+#empresa-valores h3 { font-size: 1rem; }
+#empresa-valores .container { display: flex; flex-direction: column; align-items: center; padding-bottom: 100px;}
+
+/* Empresa objetivos */
+#empresa-objetivos .container { display: flex; flex-direction: column; align-items: center; padding-bottom: 100px;}
+
 /* Productos */
 
 #productos-arenas li { color: #01741d; }
 #productos-recebos li { color: #01741d; }
 #servicios li { color: #01741d; }
-
+#productos-inicio .card-simple p {
+    color: #01741d; text-align: justify; line-height: 1.6; font-size: small;
+}
+#productos-inicio .logito {
+        width: 30px;
+        padding: 0px;
+        color: var(--verde-decor);
+    }
 
 /* ACCORDION PRODUCTOS */
 .accordion { width: 100%; max-width: 800px; margin: 0 auto; text-align: left; }
@@ -175,8 +255,18 @@ h2 { font-size: 2.5rem; }
 /* boton para volver al catalogo */
 
 .catalogo-volver{
-    font-size: 2rem; color: var(--verde-decor); text-decoration: none; font-weight: bold;
+    font-size: 1.5rem; color: var(--verde-decor); text-decoration: none; font-weight: bold;
 }
+
+#productos-especiales a {
+    text-decoration: none;
+}
+
+.logito {
+    color: var(--verde-decor);
+    
+}
+
 
 /* BOTÓN PAGOS */
 .btn-pago {
@@ -187,12 +277,19 @@ h2 { font-size: 2.5rem; }
 }
 .btn-pago:hover { background-color: var(--verde-logo); }
 
+#pagos p{
+    color: #0b5501; text-align: center; line-height: 1.6; font-size: small;
+}
+
 /* formulario de contacto */
 
 #contacto .container { display: flex; flex-direction: column; align-items: center; }
 
 #contacto .card-simple.dark {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+}
+#contacto p {
+    font-size: small; color: #ffffff; text-align: center; line-height: 1.6;
 }
 
 #contacto .submit {
@@ -220,6 +317,7 @@ form {
     background-color: #007c42;
     padding: 5px;
     border-radius: 10px;
+    min-width: fit-content;
 }
 
 label {
@@ -300,6 +398,75 @@ button:hover {
     h2 { font-size: 1.8rem; }
     
     /* Ajuste para tarjetas móviles */
-    .grid-3 { grid-template-columns: 1fr; gap: 15px; }
+    .grid-3 { grid-template-columns: 1fr; gap: 8px; }
     .card-simple { padding: 20px; }
+    
+}
+@media screen and (max-width: 768px) {
+    .grid-3 p { 
+        display: none!important;
+    }
+
+    #productos-inicio .card-simple {
+        margin-bottom: 20px;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+        border-color: #029421;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+
+    #productos-inicio .card-simple p {
+        padding: 0;
+        color: #094d00; text-align: justify; line-height: 1.6; font-size: small;
+        font-size: 0.9rem;
+    }
+
+    #productos-inicio .card-simple h2 {
+        font-size: 1.2rem;
+    }
+
+    #productos-inicio .parrafo {
+        display: none!important;
+        color: #0b5501; text-align: justify; line-height: 1.6; font-size: small;
+    }
+    #productos-inicio .logito {
+        width: 30px;
+        padding: 0px;
+        color: var(--verde-decor);
+    }
+    #productos-inicio .mt-10 {
+        color: #0b5501;
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    #productos-inicio .mt-20 p {
+        display: none!important;
+    }
+    #empresa-politica ul {
+        font-size: small;
+    } 
+    #empresa-politica .card-simple {
+        margin-bottom: 100px;
+        padding: 0%;
+    }
+    #empresa-politica p {
+        display: none!important;
+    }
+    #empresa-objetivos li {
+        font-size: small;
+    }
+    #empresa-sostenibilidad p {
+        display: none!important;
+    }
+    #contacto form {
+        padding: 5px;
+        width: 95%;
+    }
+    #contacto .card-simple.dark {
+        margin-bottom: 10px;
+        font-size: 0.6rem;
+    }
 }
