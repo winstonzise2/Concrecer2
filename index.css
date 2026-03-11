@@ -582,4 +582,12 @@ input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
         margin-bottom: 10px;
         font-size: 0.6rem;
     }
+    .modal-image { 
+        padding: 0;
+        width: 1100px;
+        object-fit: cover;
+        border-radius: 10px; 
+        object-position: center;  
+    }
 }
+
