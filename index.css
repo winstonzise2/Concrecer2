@@ -41,10 +41,36 @@ nav {
 }
 
 /* nosotros */
+
+#nosotros .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+}
+
 #nosotros .verde-logo {
     font-size: 2.5rem; margin-bottom: 20px;
 }
+
+/* empresa mision/vision */
+
+#empresa .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+}
+
+
 /* Empresa Valores estilos */
+
+#empresa-valores .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+}
 
 #empresa-valores .card-simple {
     background: rgba(0,0,0,0.1);
@@ -55,12 +81,26 @@ nav {
 
 /* Empresa política */
 
+#empresa-politica .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    margin-bottom: auto;
+}
+
 #empresa-politica .card-simple {
     background: rgba(0,0,0,0.1)
     
 }
 
 /* Empresa objetivos */
+
+#empresa-objetivos .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    margin-bottom: auto;
+}
 
 #empresa-objetivos li {
     color: #01741d;
@@ -75,9 +115,30 @@ nav {
     color: var(--verde-decor);
 }
 
+#empresa-sostenibilidad .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+}
+
 /* Productos */
 
-#productos-inicio .container { display: flex; flex-direction: column; align-items: center; padding-bottom: 100px;}
+#productos-inicio .container { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+#productos-inicio .logito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 #productos-inicio p {
     color: #01741d; text-align: justify; line-height: 1.6; font-size: small;
 }
@@ -185,6 +246,55 @@ h2 { font-size: 1.1rem; }
 
 /* Productos */
 
+#productos-concretos .container { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+#productos-arenas .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+#productos-triturados .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+
+#productos-recebos .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+#productos-especiales .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+#servicios .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
 #productos-arenas li { color: #01741d; }
 #productos-recebos li { color: #01741d; }
 #servicios li { color: #01741d; }
@@ -210,6 +320,14 @@ h2 { font-size: 1.1rem; }
 #productos-concretos p { padding: 5px 20px; color: #ffffff; text-align: left; }
 
 /* SWIPERSLIDER DE PROYECTOS */
+
+#proyectos .container-gallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
 
 #proyectos { 
     background: #2a9b5b;
@@ -270,6 +388,21 @@ h2 { font-size: 1.1rem; }
     
 }
 
+/* SECCION DE PAGOS*/
+
+#pagos .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+#pagos .card-simple {
+    padding: auto;
+    object-fit: cover;
+    min-width: 100px;
+}
 
 /* BOTÓN PAGOS */
 .btn-pago {
@@ -286,10 +419,22 @@ h2 { font-size: 1.1rem; }
 
 /* formulario de contacto */
 
-#contacto .container { display: flex; flex-direction: column; align-items: center; }
+#contacto .container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: auto;
+    justify-content: center;
+}
 
 #contacto .card-simple.dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 10px;
+    width: 200px;
+    background-color: #007a33;
 }
 #contacto p {
     font-size: small; color: #ffffff; text-align: center; line-height: 1.6;
@@ -524,6 +669,8 @@ input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
     }
 
     #productos-inicio .card-simple {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 20px;
         padding: 0%;
         justify-content: center;
@@ -538,6 +685,10 @@ input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
         color: #094d00; text-align: justify; line-height: 1.6; font-size: small;
         font-size: 0.9rem;
     }
+
+    
+
+
 
     #productos-inicio .card-simple h2 {
         font-size: 1.2rem;
@@ -556,6 +707,12 @@ input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
         color: #0b5501;
         font-size: 1rem;
         padding: 0px;
+    }
+
+    #productos-inicio .mt-20 {
+        display: flex;
+        flex-direction: column;
+    
     }
 
     #productos-inicio .mt-20 p {
