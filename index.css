@@ -246,13 +246,45 @@ h2 { font-size: 1.1rem; }
 
 /* Productos */
 
+#productos-inicio .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#productos-inicio .card-simple {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-items: center;
+}
+
+#productos-inicio .card-simple .logito {
+    padding: 5px;
+}
+
+#productos-concretos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10em;
+}
+
 #productos-concretos .container { 
     display: flex;
     flex-direction: column;
-    margin-top: 3%;
+    margin-top: 0%;
     margin-bottom: auto;
     justify-content: center;
+    padding-top: 0%;
+    align-items: center;
 }
+
+
+
+#productos-concretos .card-simple {
+    padding: 10px;
+    font-size: small;
+} 
 
 #productos-arenas .container {
     display: flex;
@@ -434,7 +466,7 @@ h2 { font-size: 1.1rem; }
     align-items: center;
     margin-bottom: 10px;
     width: 200px;
-    background-color: #007a33;
+    
 }
 #contacto p {
     font-size: small; color: #ffffff; text-align: center; line-height: 1.6;
@@ -519,6 +551,14 @@ button:hover {
     transition: opacity .5s;
 }
 
+.modal .modal-title {
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
 .modal:target {
     --opacity: 1;
     --pointer: unset;
@@ -560,6 +600,7 @@ button:hover {
     max-height: 90\\100vh;
     object-fit: cover;
     display: block;
+    border: 1px solid white;
 }
 .modal-description { 
     color: white; 
@@ -680,6 +721,13 @@ input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
         padding-top: 5px;
     }
 
+    #productos-inicio .card-simple {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        justify-items: center;
+    }
+
     #productos-inicio .card-simple p {
         padding: 0;
         color: #094d00; text-align: justify; line-height: 1.6; font-size: small;
@@ -749,6 +797,11 @@ input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
         border-radius: 10px; 
         object-position: center;  
     }
+
+    .modal .modal-title {
+        font-size: 1rem;
+    }
+
     #empresa-valores .card-simple {
         width: 110px;
         display: flex;
