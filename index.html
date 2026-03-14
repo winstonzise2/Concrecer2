@@ -6,9 +6,11 @@
     <title>Concrec-ER | Construyendo futuros sólidos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings" />
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
 
@@ -43,7 +45,8 @@
                 </ul>
             </li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#pagos">Pagos</a></li>
+            <li><a href="#cotice">Cotice</a></li>
+            <li><a href="#videos">Videos</li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -654,16 +657,121 @@
         </section>
             
 
-        <section id="pagos" class="pagina pagina-clara">
+        <section id="cotice" class="pagina pagina-clara">
             <div class="container">
-                <h2 class="verde-logo">Plataforma de Pagos</h2>
+                <h2 class="verde-logo">Cotice con nosotros</h2>
                 <div class="card-simple mt-20">
-                    <p class="realicepagos">Realice sus pagos de forma segura.</p>
-                    <button class="btn-pago mt-20" onclick="irAPagar()">Ir a Pasarela de Pagos</button>
+                    <a href="https://wa.me/34555005500/?text=tu%20texto%20personalizado">
+                        <img class="logo-wasup" src="/images/wasup_logo.png" alt="">
+                    </a>
+                    <p class="realicepagos">Reciba informacion del producto de su interes</p>
+                    <a href="https://wa.me/3002349769?text=Hola" class="float-wa" target="_blank">
+                        <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
+                    </a>
+                </div>
+                <h2 class="verde-logo">O envie un mensaje con su solicitud</h2>
+                <form action="https://formspree.io/f/mzdjrnqj" method="POST">       
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+
+        <section id="videos" class="pagina section-bg">
+            <div class="container-compacto">
+                <h2 class="text-white">Nuestros Proyectos en Video</h2>
+                
+                <div class="video-grid-compacta">
+                    <div class="video-card-mini">
+                        <a href="#video-proyecto-1">
+                            <div class="thumb-wrapper">
+                                <img src="https://img.youtube.com/vi/ID_DEL_VIDEO_1/mqdefault.jpg" alt="Proyecto 1">
+                                <div class="play-overlay-mini"><i class="fa fa-play"></i></div>
+                            </div>
+                        </a>
+                        <p>Proyecto Carabelas</p>
+                    </div>
+
+                    <div class="video-card-mini">
+                        <a href="#video-proyecto-2">
+                            <div class="thumb-wrapper">
+                                <img src="https://img.youtube.com/vi/ID_DEL_VIDEO_2/mqdefault.jpg" alt="Proyecto 2">
+                                <div class="play-overlay-mini"><i class="fa fa-play"></i></div>
+                            </div>
+                        </a>
+                        <p>Proyecto Horizonte</p>
+                    </div>
+
+                    <div class="video-card-mini">
+                        <a href="#video-proyecto-3">
+                            <div class="thumb-wrapper">
+                                <img src="https://img.youtube.com/vi/ID_DEL_VIDEO_3/mqdefault.jpg" alt="Proyecto 3">
+                                <div class="play-overlay-mini"><i class="fa fa-play"></i></div>
+                            </div>
+                        </a>
+                        <p>Infraestructura Vial</p>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
+        <section id="video-proyecto-1" class="pagina section-bg-alt">
+            <div class="container-video-flex">
+                <div class="video-frame">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ID_DEL_VIDEO_3" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Infraestructura Vial</h3>
+                    <p>Aporte a la movilidad urbana mediante pavimentos duraderos y sostenibles.</p>
+                    <a href="#videos" class="btn-volver">Volver a Galería</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-proyecto-2" class="pagina section-bg-alt">
+            <div class="container-video-flex">
+                <div class="video-frame">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ID_DEL_VIDEO_3" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Infraestructura Vial</h3>
+                    <p>Aporte a la movilidad urbana mediante pavimentos duraderos y sostenibles.</p>
+                    <a href="#videos" class="btn-volver">Volver a Galería</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="video-proyecto-3" class="pagina section-bg-alt">
+            <div class="container-video-flex">
+                <div class="video-frame">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ID_DEL_VIDEO_3" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Infraestructura Vial</h3>
+                    <p>Aporte a la movilidad urbana mediante pavimentos duraderos y sostenibles.</p>
+                    <a href="#videos" class="btn-volver">Volver a Galería</a>
+                </div>
+            </div>
+        </section>
+
+
         <section id="contacto" class="pagina section-bg">
             <div class="container">
                 <h2 class="text-white">Contacto</h2>
@@ -694,10 +802,40 @@
             </div>
             
         </section>
-        <footer id="footer" class="pagina pagina-clara">
-            <div class="container">
-                <p>&copy; 2024 Concrec-ER. Todos los derechos reservados.</p>
-                <p>Solidez, confianza y respaldo para sus proyectos.</p>
+        
+        <footer id="footer" class="pagina section-bg">
+            <div class="container-footer">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <img src="images/logo_concrecer.png" alt="Concrec-ER" class="footer-logo">
+                        <p>Solidez, confianza y respaldo para sus proyectos de construcción.</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#videos">Videos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Contacto</h4>
+                        <p><i class="fa fa-envelope"></i> info@concrecer.com</p>
+                        <p><i class="fa fa-phone"></i> +57 123 456 7890</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Concrec-ER. Todos los derechos reservados.</p>
+                </div>
             </div>
         </footer>
     </main>
@@ -715,6 +853,6 @@
             <a href="#proyectos" class="close-modal">X</a>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
